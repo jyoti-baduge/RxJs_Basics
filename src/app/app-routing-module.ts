@@ -1,3 +1,9 @@
+import { FilterOperatorComponent } from './pages/filter-operator/filter-operator.component';
+import { DistinctuntilkeychangedComponent } from './pages/distinctuntilkeychanged/distinctuntilkeychanged.component';
+import { DistinctUntilChangedComponent } from './pages/distinct-until-changed/distinct-until-changed.component';
+import { DistinctComponent } from './pages/distinct/distinct.component';
+import { SkipWhileOperatorComponent } from './pages/skip-while-operator/skip-while-operator.component';
+import { SkipUntilOperatorComponent } from './pages/skip-until-operator/skip-until-operator.component';
 import { SkipLastOperatorComponent } from './pages/skip-last-operator/skip-last-operator.component';
 import { SkipOperatorComponent } from './pages/skip-operator/skip-operator.component';
 import { TakeWhileOperatorComponent } from './pages/take-while-operator/take-while-operator.component';
@@ -15,7 +21,7 @@ import { OperatorsComponent } from './pages/operators/operators.component';
 const routes : Routes = [{
   path: 'operators',
   component: OperatorsComponent,
-  children:[{path:'buffer', component:BufferOperatorComponent},
+  children:[{path:'', pathMatch:'full',  component:BufferOperatorComponent},
   {path:'buffercount', component:BufferCOuntOperatorComponent},
   {path:'buffertime', component:BufferTimeComponent},
   {path:'buffertoggle', component:BufferToggleOperatorComponent},
@@ -24,7 +30,14 @@ const routes : Routes = [{
   {path:'takeUntil', component:TakeuntilOperatorComponent},
   {path:'takeWhile', component:TakeWhileOperatorComponent},
   {path:'skip', component:SkipOperatorComponent},
-  {path:'skipLast', component:SkipLastOperatorComponent}]
+  {path:'skipLast', component:SkipLastOperatorComponent},
+  {path:'skipUntil', component:SkipUntilOperatorComponent},
+  {path:'skipWhile', component:SkipWhileOperatorComponent},
+  {path:'distinct', component:DistinctComponent},
+  {path:'distinctUntilChanged', component:DistinctUntilChangedComponent},
+  {path:'distinctUntilKeyChanged', component:DistinctuntilkeychangedComponent},
+  {path:'filter', component:FilterOperatorComponent}]
+
 }];
 
 @NgModule({
