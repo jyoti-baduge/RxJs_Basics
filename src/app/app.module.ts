@@ -24,6 +24,15 @@ import { DistinctComponent } from './pages/distinct/distinct.component';
 import { DistinctUntilChangedComponent } from './pages/distinct-until-changed/distinct-until-changed.component';
 import { DistinctuntilkeychangedComponent } from './pages/distinctuntilkeychanged/distinctuntilkeychanged.component';
 import { FilterOperatorComponent } from './pages/filter-operator/filter-operator.component';
+import { SampleComponent } from './pages/sample/sample.component';
+import { AuditOperatorComponent } from './pages/audit-operator/audit-operator.component';
+import { FirstComponent } from './pages/first/first.component';
+import { LastOperatorComponent } from './pages/last-operator/last-operator.component';
+import { DebounceOperatorComponent } from './pages/debounce-operator/debounce-operator.component';
+import { ElementAtOperatorComponent } from './pages/element-at-operator/element-at-operator.component';
+import { IgnoreElementsComponent } from './pages/ignore-elements/ignore-elements.component';
+import { SingleOperatorComponent } from './pages/single-operator/single-operator.component';
+import { MapOperatorComponent } from './pages/map-operator/map-operator.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +57,16 @@ import { FilterOperatorComponent } from './pages/filter-operator/filter-operator
     DistinctComponent,
     DistinctUntilChangedComponent,
     DistinctuntilkeychangedComponent,
-    FilterOperatorComponent
+    FilterOperatorComponent,
+    SampleComponent,
+    AuditOperatorComponent,
+    FirstComponent,
+    LastOperatorComponent,
+    DebounceOperatorComponent,
+    ElementAtOperatorComponent,
+    IgnoreElementsComponent,
+    SingleOperatorComponent,
+    MapOperatorComponent
   ],
   imports: [
     BrowserModule,

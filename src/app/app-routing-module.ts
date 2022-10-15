@@ -17,6 +17,15 @@ import { BufferCOuntOperatorComponent } from './pages/buffer-count-operator/buff
 import { BufferOperatorComponent } from './pages/buffer-operator/buffer-operator.component';
 import { BufferTimeComponent } from './pages/buffer-time/buffer-time.component';
 import { OperatorsComponent } from './pages/operators/operators.component';
+import { SampleComponent } from './pages/sample/sample.component';
+import { AuditOperatorComponent } from './pages/audit-operator/audit-operator.component';
+import { FirstComponent } from './pages/first/first.component';
+import { LastOperatorComponent } from './pages/last-operator/last-operator.component';
+import { DebounceOperatorComponent } from './pages/debounce-operator/debounce-operator.component';
+import { ElementAtOperatorComponent } from './pages/element-at-operator/element-at-operator.component';
+import { IgnoreElementsComponent } from './pages/ignore-elements/ignore-elements.component';
+import { SingleOperatorComponent } from './pages/single-operator/single-operator.component';
+import { MapOperatorComponent } from './pages/map-operator/map-operator.component';
 
 const routes : Routes = [{
   path: 'operators',
@@ -36,7 +45,17 @@ const routes : Routes = [{
   {path:'distinct', component:DistinctComponent},
   {path:'distinctUntilChanged', component:DistinctUntilChangedComponent},
   {path:'distinctUntilKeyChanged', component:DistinctuntilkeychangedComponent},
-  {path:'filter', component:FilterOperatorComponent}]
+  {path:'filter', component:FilterOperatorComponent},
+  {path:'sample', component:SampleComponent},
+  {path:'audit', component:AuditOperatorComponent},
+  {path:'first', component:FirstComponent},
+  {path:'last', component:LastOperatorComponent},
+  {path:'debounce', component:DebounceOperatorComponent},
+  {path:'elementAt', component:ElementAtOperatorComponent},
+  {path:'ignore', component:IgnoreElementsComponent},
+  {path:'single', component:SingleOperatorComponent},
+  {path:'map', component:MapOperatorComponent}
+]
 
 }];
 
